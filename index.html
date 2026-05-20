@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .logo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      font-weight: 100;
+      margin-right: 20px;
+    }
+
+    .btn{
+        padding: 8px 9px;
+        background-color: #8C9FE3;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        transition: 1s background-color;
+    }
+
+    .btn:hover{
+         background-color: #7084cc;
+    }
+
+    .banner img{
+        width: 1031px;
+    }
+
+    .banner {
+        padding-top: 96px;
+        width: 1031px;
+        margin: 0 auto;
+    }
+
+    .product{
+        margin-top: 96px;
+    }
+
+    .product-title{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .product-subtitle{
+        margin-top: 7px;
+        font-size: 28px;
+        color: black;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .product-card{
+        width: 360px;
+        height: 400px;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+
+    .product-container-price{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .product-price{
+        font-size: 26px;
+        color: #3E68FF;
+        font-weight: bold;
+    }
+
+    .desc{
+        color: rgb(70, 69, 69);
+        text-decoration: line-through;
+    }
+    .product-info{
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        color: #636363;
+    }
+
+    .product-name{
+        font-size: 26px;
+        text-align: center;
+        margin-top: 12px;
+        font-weight: bold;
+    }
+    
+    .product-card{
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+        padding: 30px 36px;
+    }
+
+    .btn-order{
+       font-size: 21px;
+       color: white; 
+       background-color: #9EB4FF;
+       padding: 3px 65px;
+       text-align: center;
+       border-radius:50xp;
+       margin-top: 10px;
+       cursor: pointer;
+    }
+
+
+
+    .card{
+        width: 360px;
+        height: 400px;
+        padding: 30px 36px;
+        border: 1px solid black;
+        border-radius: 50px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .product-name{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        color: black;
+        margin-top: 12px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+        color: rgb(87, 87, 87);
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .price{
+        margin-top: 10px;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #3E68FF;
+    }
+
+    .order{
+        padding: 6px 35px;
+        text-align: center;
+        background-color: #9EB4FF;
+        font-size: 21px;
+        color: white;
+        margin-top: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+    
+
+
+    form{
+        max-width: 700px;
+        height: 400px;
+        border: 1px solid black;
+        border-radius: 60px;
+        margin: 0 auto;
+    }
+   
+
+</style>
+<body>
+
+
+    <header>
+        <div class="logo">Юный техник</div>
+        <nav>
+            <a href="#">Товары</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Помощь</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="btn">Посмотреть предложение</div>
+    </header>
+
+    <div class="banner">
+        <img src="img/background.jpg">
+    </div>
+
+    <section class="product">
+        <h1 class="product-title">Лучшие товары от Юного Техника</h1>
+        <p class="product-subtitle">Широкий выбор современной техники</p>
+        
+        <div class="container">
+
+            <div class="card">
+                <img src="img/product1.jpg" alt="">
+                <h1 class="product-nane">Смартфон XY-300</h1>
+                <p class="subtitle">Безграничные возможности в ваших руках</p>
+                <p class="price">18 990</p>
+                <div class="order">Заказать</div>
+            </div>
+
+             <div class="card">
+                <img src="img/product1.jpg" alt="">
+                <h1 class="product-nane">Смартфон XY-300</h1>
+                <p class="subtitle">Безграничные возможности в ваших руках</p>
+                <p class="price">18 990</p>
+                <div class="order">Заказать</div>
+            </div>
+
+
+             <div class="card">
+                <img src="img/product1.jpg" alt="">
+                <h1 class="product-nane">Смартфон XY-300</h1>
+                <p class="subtitle">Безграничные возможности в ваших руках</p>
+                <p class="price">18 990</p>
+                <div class="order">Заказать</div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="question">
+        
+          <form>
+            
+          </form>
+    </section>
+
+  
+    
+</body>
+</html>
